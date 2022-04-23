@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #111;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+body #status {
+  background: #343434;
+  color: #b5b5b5;
+  padding: 5px 10px;
+  margin: 20px;
+  border-radius: 5px;
+  max-height: 100px;
+  overflow: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+}
+
+body .btn {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  margin: 10px 0;
+  outline: none;
+  background: #111;
+  -webkit-appearance: none;
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.1), 5px 5px 10px black, inset -2px -2px 5px rgba(255, 255, 255, 0.1), inset 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 0 2px #1f1f1f;
+          box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.1), 5px 5px 10px black, inset -2px -2px 5px rgba(255, 255, 255, 0.1), inset 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 0 2px #1f1f1f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .btn:checked {
+  background-color: #20b7ff;
+}
+
+body .btn::before {
+  position: absolute;
+  text-align: center;
+  color: #b5b5b5;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 100px;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#555));
+  background: linear-gradient(to top, #000, #555);
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 0 1px #232323;
+          box-shadow: 0 0 0 1px #232323;
+  -webkit-transform: scale(0.98, 0.96);
+          transform: scale(0.98, 0.96);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #lightBtn::before {
+  content: "Light";
+}
+
+body #fanBtn::before {
+  content: "Fan";
+}
+
+body .btn:checked::before {
+  left: 100px;
+  color: #63cdff;
+}
+
+body .btn::after {
+  content: "";
+  position: absolute;
+  left: 150px;
+  top: calc(50% - 2px);
+  height: calc(50% - 2px);
+  width: 4px;
+  height: 4px;
+  background: #555;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .btn:checked::after {
+  left: calc(150px + 100px);
+  background-color: #63cdff;
+  -webkit-box-shadow: 0 0 5px #63cdff, 0 0 15px #63cdff, 0 0 30px #63cdff;
+          box-shadow: 0 0 5px #63cdff, 0 0 15px #63cdff, 0 0 30px #63cdff;
+}
+/*# sourceMappingURL=app.css.map */
