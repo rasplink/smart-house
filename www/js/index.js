@@ -1,5 +1,5 @@
 document.addEventListener("deviceready", onDeviceReady, false);
-// onDeviceReady();
+// onDeviceReady(); // uncomment to test on pc browser
 function onDeviceReady() {
   const lightBtn = document.getElementById("lightBtn");
   const fanBtn = document.getElementById("fanBtn");
