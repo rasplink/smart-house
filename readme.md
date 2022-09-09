@@ -22,7 +22,7 @@
 ### Uploading sketch
 - open Arduino IDE 
 - go to file > preferences > additional boards manager urls and add this url : http://arduino.esp8266.com/stable/package_esp8266com_index.json
-- the go to tools > boards > boards mangager and search for esp8266 by community and choose version 2.5.0
+- then go to tools > boards > boards manager and search for esp8266 by community and choose version 2.5.0
 - select your board e.g. tools > boards > wemos d1 r1
 - select upload speed e.g. tools > upload speed > 115200 
 - add your [code](./arduino/smartHouse.ino) and click verify then upload (of course you need to modify the ssid and password to suit you wifi network)
@@ -32,7 +32,7 @@
 
 ---
 
-> After upload sketch to arduino it will connect right away on you wifi network so you can check arduino internal `ip` and modify the [domain variable](./www/js/index.js) with arduino ip
+> After uploading sketch to arduino it will connect right away on you wifi network so you can check arduino internal `ip` and modify the [domain variable](./www/js/index.js) with arduino ip
 
 ## For controlling the light and fan run below commands:
 
